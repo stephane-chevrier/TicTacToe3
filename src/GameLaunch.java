@@ -1,5 +1,3 @@
-import fr.le_campus_numerique.stephanechevrier.tictactoe.viewer.Console;
-import fr.le_campus_numerique.stephanechevrier.tictactoe.viewer.Input;
 
 /**
  * Nom             GameLaunch
@@ -27,13 +25,13 @@ public class GameLaunch {
      * initialisation des variables locales
      */
     private static final boolean partieNouvelle = true;
-    private static final boolean partieSauvegardee = false;
+//    private static final boolean partieSauvegardee = false;
 
     /**
      * initialisation des objets
      */
     View view;
-    Persistence persistence;
+//    Persistence persistence;
 
 
     /**
@@ -41,7 +39,7 @@ public class GameLaunch {
      */
     public GameLaunch() {
         this.view = new View();
-        this.persistence = new GameSerialization();
+//        this.persistence = new GameSerialization();
     }
 
     /**
@@ -62,7 +60,7 @@ public class GameLaunch {
         do {
 
             // Affichage des jeux possible
-            view.sautLigne();
+            view.afficherSautLigne();
             view.afficherListeJeux();
             for (gameChoice g : gameChoice.values()) {
                 view.afficherEcran(g.toString(), View.NO_INDEX, View.SAUT);
@@ -92,19 +90,19 @@ public class GameLaunch {
 //                        jeu = new Gomoku();
 //                    }
                     // Jeu Puissance4
-                    case PUISSANCE4 -> {
-                        view.afficherEcran(textesConsole.MESSAGE_PUISSANCE4, TextesConsole.NO_INDEX, TextesConsole.SAUT);
-                        jeu = null;
-                    }
+//                    case PUISSANCE4 -> {
+//                        view.afficherEcran(textesConsole.MESSAGE_PUISSANCE4, TextesConsole.NO_INDEX, TextesConsole.SAUT);
+//                        jeu = null;
+//                    }
                     // Plateforme quittée
                     case QUIT -> {
-                        view.afficherEcran(textesConsole.MESSAGE_FIN, TextesConsole.NO_INDEX, TextesConsole.SAUT);
+                        view.afficherFin();
                         jeu = null;
                     }
                 }
                 // Traitement exception saisie non valide
             } catch (Exception e) {
-                view.afficherEcran(textesConsole.MESSAGE_SAISIE_INVALIDE, TextesConsole.NO_INDEX, TextesConsole.SAUT);
+                view.afficherFin();
                 jeu = null;
             }
 

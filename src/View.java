@@ -186,7 +186,7 @@ public class View implements Serializable {
         }
         // affichage de la dernière ligne du damier
         afficherEcran(LineDown, NO_INDEX, SAUT);
-        sautLigne();
+        afficherSautLigne();
     }
 
     /**
@@ -241,9 +241,44 @@ public class View implements Serializable {
     }
 
     /**
+     * méthode affichage message fin du plateau
+     */
+    public void afficherFin() {
+        afficherEcran(MESSAGE_SAISIE_INVALIDE, NO_INDEX, SAUT);
+    }
+
+    /**
+     * méthode affichage message partie terminée
+     */
+    public void afficherPartieTerminee(String nom, int index) {
+        afficherEcran(MESSAGE_PARTIE_TERMINEE + MESSAGE_LE_JOUEUR + nom + MESSAGE_A_GAGNE,index, SAUT);
+    }
+
+    /**
+     * méthode affichage message partie égalité
+     */
+    public void afficherPartieEgalite() {
+        afficherEcran(MESSAGE_PARTIE_TERMINEE + MESSAGE_EGALITE, NO_INDEX, SAUT);
+    }
+
+    /**
+     * méthode affichage message case occupée
+     */
+    public void afficherCaseOccupee(String coup) {
+        afficherEcran(MESSAGE_CASE + coup +MESSAGE_CASE_OCCUPEE, NO_INDEX, SAUT);
+    }
+
+    /**
+     * méthode affichage message coup joué
+     */
+    public void afficherCoupJoue(String coup, String name, int index) {
+        afficherEcran(MESSAGE_COUP_JOUE1 + coup + MESSAGE_COUP_JOUE2 + name, index, SAUT);
+    }
+
+    /**
      * méthode d'affichage d'un saut de ligne vide
      */
-    public void sautLigne() {
+    public void afficherSautLigne() {
         afficherEcran("",NO_INDEX, SAUT);
     }
 
@@ -253,7 +288,7 @@ public class View implements Serializable {
      * @param index
      * @return String : saisie du clavier
      */
-    public String getString(String message, int index) {
+    private String getString(String message, int index) {
 
         // initialisation objet Scanner
         Scanner clavier = new Scanner(System.in);
@@ -272,4 +307,14 @@ public class View implements Serializable {
     public String getFaitesVotreChoix() {
         return getString(MESSAGE_FAITES_VOTRE_CHOIX, NO_INDEX);
     }
+
+
+    /**
+     * Fonction de saisie du choix de jeu
+     * @return String : saisie du clavier
+     */
+    public String getNomjoueur() {
+        return getString(MESSAGE_SAISIE_NOM1, NO_INDEX);
+    }
+
 }
