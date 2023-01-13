@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd1f321c-4ef4-4502-a74d-70128c25fa34" name="Changes" comment="2ème TicTacToe pour MVC">
-      <change afterPath="$PROJECT_DIR$/src/Damier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameControleur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GameJoueurs.java" afterDir="false" />
+    <list default="true" id="bd1f321c-4ef4-4502-a74d-70128c25fa34" name="Changes" comment="2ème TicTacToe pour MVC&#10;11 janvier fin de journée">
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameJoueurs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameJoueurs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameLaunch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
     </list>
@@ -25,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="stephane.chevrier &lt;stephane.chevrier@le-campus-numerique.fr&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -77,7 +81,7 @@
       <workItem from="1673425108784" duration="10000" />
       <workItem from="1673510731677" duration="749000" />
       <workItem from="1673556233343" duration="119000" />
-      <workItem from="1673556377965" duration="4019000" />
+      <workItem from="1673556377965" duration="5847000" />
     </task>
     <task id="LOCAL-00001" summary="2ème TicTacToe pour MVC">
       <created>1673510763799</created>
@@ -86,7 +90,35 @@
       <option name="project" value="LOCAL" />
       <updated>1673510763799</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2ème TicTacToe pour MVC&#10;11 janvier fin de journée">
+      <created>1673560733787</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673560733787</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2ème TicTacToe pour MVC&#10;11 janvier fin de journée">
+      <created>1673560899147</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673560899147</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2ème TicTacToe pour MVC&#10;11 janvier fin de journée">
+      <created>1673561030466</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673561030466</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2ème TicTacToe pour MVC&#10;11 janvier fin de journée">
+      <created>1673561049913</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673561049913</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +126,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2ème TicTacToe pour MVC" />
-    <option name="LAST_COMMIT_MESSAGE" value="2ème TicTacToe pour MVC" />
+    <MESSAGE value="2ème TicTacToe pour MVC&#10;11 janvier fin de journée" />
+    <option name="LAST_COMMIT_MESSAGE" value="2ème TicTacToe pour MVC&#10;11 janvier fin de journée" />
   </component>
 </project>

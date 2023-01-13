@@ -52,7 +52,7 @@ public class GameJoueurs implements java.io.Serializable {
 
         // Boucle de saisie des joueurs
         for (int i=1; i<=nombreJoueurs; i++) {
-            saisie = view.getNomjoueur();
+            saisie = view.getNomjoueur(i);
             joueurs.add(saisie);
         }
         // retour de la ArrayList des 3 joueurs (vide, joueur n°1, joueur n°2)

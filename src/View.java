@@ -33,6 +33,7 @@ public class View implements Serializable {
      * initialisation autres constantes
      */
     public static final int NO_INDEX = 0;
+    public static final String NO_MESSAGE = "";
 
     /**
      * initialisation des constantes utilisées par afficherEcran
@@ -51,7 +52,8 @@ public class View implements Serializable {
             CODE_COULEUR = "@C",
             CODE_INDEX = "@i",
             CODE_ERREUR = "@E",
-            MESSAGE_SAISIE_NOM1 = CODE_DEFAUT+"Saisissez le nom du "+CODE_COULEUR+"joueur n°"+CODE_INDEX+CODE_DEFAUT+" (Random pour joueur aléatoire) : ",
+            MESSAGE_SAISIE_NOM1= CODE_DEFAUT+"Saisissez le nom du "+CODE_COULEUR+"joueur n°"+CODE_INDEX,
+            MESSAGE_SAISIE_NOM2 = CODE_DEFAUT+" (Random pour joueur aléatoire) : ",
             MESSAGE_COUP_JOUE1 = CODE_DEFAUT+"coup ",
             MESSAGE_COUP_JOUE2 = " joué par "+CODE_COULEUR,
             MESSAGE_PARTIE_TERMINEE = CODE_DEFAUT+"partie terminée",
@@ -244,7 +246,7 @@ public class View implements Serializable {
      * méthode affichage message fin du plateau
      */
     public void afficherFin() {
-        afficherEcran(MESSAGE_SAISIE_INVALIDE, NO_INDEX, SAUT);
+        afficherEcran(MESSAGE_FIN, NO_INDEX, SAUT);
     }
 
     /**
@@ -288,13 +290,14 @@ public class View implements Serializable {
      * @param index
      * @return String : saisie du clavier
      */
-    private String getString(String message, int index) {
+    private String getString(String message1, String message2, int index) {
 
         // initialisation objet Scanner
         Scanner clavier = new Scanner(System.in);
 
         // affiche le message
-        afficherEcran(message, index, NO_SAUT);
+        afficherEcran(message1, index, NO_SAUT);
+        afficherEcran(message2, NO_INDEX, NO_SAUT);
 
         // retour de la chaine saisie
         return clavier.nextLine();
@@ -305,7 +308,7 @@ public class View implements Serializable {
      * @return String : saisie du clavier
      */
     public String getFaitesVotreChoix() {
-        return getString(MESSAGE_FAITES_VOTRE_CHOIX, NO_INDEX);
+        return getString(MESSAGE_FAITES_VOTRE_CHOIX, NO_MESSAGE, NO_INDEX);
     }
 
 
@@ -313,8 +316,8 @@ public class View implements Serializable {
      * Fonction de saisie du choix de jeu
      * @return String : saisie du clavier
      */
-    public String getNomjoueur() {
-        return getString(MESSAGE_SAISIE_NOM1, NO_INDEX);
+    public String getNomjoueur(int index) {
+        return getString(MESSAGE_SAISIE_NOM1, MESSAGE_SAISIE_NOM2, index);
     }
 
 }

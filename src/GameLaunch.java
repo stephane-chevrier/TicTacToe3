@@ -80,12 +80,13 @@ public class GameLaunch {
 //                        nouvellePartie = partieSauvegardee;
 //                        jeu = (GameControleur) persistence.restaurer(GameSerialization.fichierSauvegardeGameControleur);
 //                    }
-//
-//                    // Jeu TicTacToe
-//                    case TICTACTOE -> {
-//                        jeu = new TicTacToe();
-//                    }
-//                    // Jeu TicTacToe2
+
+                    // Jeu TicTacToe
+                    case TICTACTOE -> {
+                        jeu = new TicTacToe();
+                    }
+
+//                    // Jeu Gomoku
 //                    case GOMOKU -> {
 //                        jeu = new Gomoku();
 //                    }
