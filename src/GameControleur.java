@@ -97,7 +97,7 @@ public abstract class GameControleur /* implements Serializable */ {
             gameJoueurs.allocationPlayers(joueurs, size);
 
             // définition aléatoire du 1er joueur à jouer
-            activePlayer = gameJoueurs.joueur.get((int) Math.round((Math.random() + 1)));
+            activePlayer = gameJoueurs.joueur.get((int) Math.round((Math.random())));
 
         } else {
 
@@ -128,7 +128,7 @@ public abstract class GameControleur /* implements Serializable */ {
             view.display(damier.getPlateau());
 
             // Permute alternativement les joueurs
-            activePlayer = (activePlayer.name.equals(gameJoueurs.joueur.get(2).name)) ? gameJoueurs.joueur.get(1) : gameJoueurs.joueur.get(2);
+            activePlayer = (activePlayer.name.equals(gameJoueurs.joueur.get(1).name)) ? gameJoueurs.joueur.get(0) : gameJoueurs.joueur.get(1);
 
             // répétition de la boucle tant que la partie n'est pas finie
         }

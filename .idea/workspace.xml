@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd1f321c-4ef4-4502-a74d-70128c25fa34" name="Changes" comment="2ème TicTacToe pour MVC&#10;11 janvier fin de journée">
-      <change afterPath="$PROJECT_DIR$/src/TicTacToe.java" afterDir="false" />
+    <list default="true" id="bd1f321c-4ef4-4502-a74d-70128c25fa34" name="Changes" comment="11 janvier fin de journée">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameControleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameControleur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameJoueurs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameJoueurs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameLaunch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +38,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/stephane/Documents/Travail_Perso/CampusNumérique_Java/TicTac2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/stephane/Documents/Travail_Perso/CampusNumérique_Java/TicTac2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -81,7 +79,7 @@
       <workItem from="1673425108784" duration="10000" />
       <workItem from="1673510731677" duration="749000" />
       <workItem from="1673556233343" duration="119000" />
-      <workItem from="1673556377965" duration="5847000" />
+      <workItem from="1673556377965" duration="7046000" />
     </task>
     <task id="LOCAL-00001" summary="2ème TicTacToe pour MVC">
       <created>1673510763799</created>
@@ -118,7 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673561049913</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2ème TicTacToe pour MVC&#10;11 janvier fin de journée">
+      <created>1673594336526</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673594336526</updated>
+    </task>
+    <task id="LOCAL-00007" summary="11 janvier fin de journée">
+      <created>1673594484361</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673594484361</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +138,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2ème TicTacToe pour MVC" />
+    <MESSAGE value="2ème TicTacToe pour MVC&#10;12 janvier 8h30" />
     <MESSAGE value="2ème TicTacToe pour MVC&#10;11 janvier fin de journée" />
-    <option name="LAST_COMMIT_MESSAGE" value="2ème TicTacToe pour MVC&#10;11 janvier fin de journée" />
+    <MESSAGE value="11 janvier fin de journée" />
+    <option name="LAST_COMMIT_MESSAGE" value="11 janvier fin de journée" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GameControleur.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -32,7 +32,7 @@ public class GameJoueurs implements java.io.Serializable {
      * @param damier
      */
     public GameJoueurs(Damier damier) {
-        this.nombreJoueurs=2;      // 3 joueurs : 1 joueur vide (index0) + 2 joueurs
+        this.nombreJoueurs=2;
         this.view = new View();
         this.damier = damier;
     }
