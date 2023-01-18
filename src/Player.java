@@ -38,6 +38,7 @@ public abstract class Player implements Serializable {
     public String representation;
     public String couleur;
     public int size;
+    public GameControleur gameControleur;
 
     /**
      * constructeur de la Class Player
@@ -61,9 +62,6 @@ public abstract class Player implements Serializable {
      * Fonction de saisie de coordonnées + vérification + renvoie les coordonnées
      * @param size
      * @param index
-     * @param console
-     * @param textesConsole
-     * @param input
      * @return ArrayList<Integer> : {Y,X}
      */
     public abstract ArrayList<Integer> getMoveFromPlayer (int size, int index);

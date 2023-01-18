@@ -14,10 +14,9 @@ public class TicTacToe extends GameControleur /* implements Serializable */ {
     public TicTacToe() {
         this.size = 2;      /* =n défini un plateau de n+1 * n+1 cellules pour le jeu TicTacToe */
         this.nbreAlignements = (size + 1) * 3;   // on aura besoin de 3 blocs : lignes, colonnes, diagonales
-        this.alignementGagnant = size+1;
-        this.view = new View();
+        this.alignementGagnant = 3;
+        this.viewer = new Viewer();
         this.damier = new Damier(this.size);                 // this.size permet de spécifier size de l'objet TicTacToe
-        this.gameJoueurs = new GameJoueurs(this.damier);     // Après avoir instancié le damier, sinon Pb !
     }
 
     /**

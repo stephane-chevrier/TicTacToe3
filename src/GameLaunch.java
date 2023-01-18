@@ -30,7 +30,7 @@ public class GameLaunch {
     /**
      * initialisation des objets
      */
-    View view;
+    Viewer viewer;
 //    Persistence persistence;
 
 
@@ -38,7 +38,7 @@ public class GameLaunch {
      * Constructeur de la Class GameLaunch
      */
     public GameLaunch() {
-        this.view = new View();
+        this.viewer = new Viewer();
 //        this.persistence = new GameSerialization();
     }
 
@@ -53,21 +53,21 @@ public class GameLaunch {
         boolean nouvellePartie = partieNouvelle;
 
         // Initialisation de l'affichage
-        view.displayEffacer();
-        view.afficherBienvenue();
+        viewer.displayEffacer();
+        viewer.afficherBienvenue();
 
         // Boucle tant que Quit n'est pas saisi
         do {
 
             // Affichage des jeux possible
-            view.afficherSautLigne();
-            view.afficherListeJeux();
+            viewer.afficherSautLigne();
+            viewer.afficherListeJeux();
             for (gameChoice g : gameChoice.values()) {
-                view.afficherEcran(g.toString(), View.NO_INDEX, View.SAUT);
+                viewer.afficherEcran(g.toString(), Viewer.NO_INDEX, Viewer.SAUT);
             }
 
             // Saisie du nom du jeu
-            saisie = view.getFaitesVotreChoix();
+            saisie = viewer.getFaitesVotreChoix();
 
             // Traitement exception si saisie n'est pas dans gameChoice
             try {
@@ -86,24 +86,24 @@ public class GameLaunch {
                         jeu = new TicTacToe();
                     }
 
-//                    // Jeu Gomoku
-//                    case GOMOKU -> {
-//                        jeu = new Gomoku();
-//                    }
+                    // Jeu Gomoku
+                    case GOMOKU -> {
+                        jeu = new Gomoku();
+                    }
                     // Jeu Puissance4
-//                    case PUISSANCE4 -> {
-//                        view.afficherEcran(textesConsole.MESSAGE_PUISSANCE4, TextesConsole.NO_INDEX, TextesConsole.SAUT);
-//                        jeu = null;
-//                    }
+                    case PUISSANCE4 -> {
+                        viewer.afficherPasDePuissance4();
+                        jeu = null;
+                    }
                     // Plateforme quittée
                     case QUIT -> {
-                        view.afficherFin();
+                        viewer.afficherFin();
                         jeu = null;
                     }
                 }
                 // Traitement exception saisie non valide
             } catch (Exception e) {
-                view.afficherFin();
+                viewer.afficherSaisieInvalide();
                 jeu = null;
             }
 

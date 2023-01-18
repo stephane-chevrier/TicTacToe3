@@ -10,7 +10,7 @@ import java.util.Scanner;
      * Date :          23 décembre 2022
      * @author Stéphane CHEVRIER
      */
-public class View implements Serializable {
+public class Viewer implements Serializable {
 
         /**
          * définition des constantes pour les cases : couleur, valeur, représentation
@@ -174,14 +174,14 @@ public class View implements Serializable {
         for (int i = 0; i <= size-1; i++) {
 
             // affichage du n° de ligne
-            afficherEcran(View.COL + " " + index.get(i) + " ", NO_INDEX, NO_SAUT);
+            afficherEcran(Viewer.COL + " " + index.get(i) + " ", NO_INDEX, NO_SAUT);
 
             // boucle de balayage des colonnes
             for (int j = 0; j <= size-1; j++) {
                 afficherEcran(cell[i][j].getRepresentation(COL), NO_INDEX, NO_SAUT);
             }
             // Affichage de la bordure de droite et de la ligne de séparation des lignes
-            afficherEcran(View.COL, NO_INDEX, SAUT);
+            afficherEcran(Viewer.COL, NO_INDEX, SAUT);
             if (i < size-1) {
                 afficherEcran(LineMid, NO_INDEX, SAUT);
             }
@@ -208,7 +208,7 @@ public class View implements Serializable {
      * @param i
      * @param saut
      */
-    public void afficherEcran(String texte, int i, boolean saut) {
+    public static void afficherEcran(String texte, int i, boolean saut) {
 
         // Conversion de l'index i en chaine
         String convertTexte = new String();
@@ -278,6 +278,28 @@ public class View implements Serializable {
     }
 
     /**
+     * méthode affichage message pas de puissance4
+     */
+    public void afficherPasDePuissance4() {
+        afficherEcran(MESSAGE_PUISSANCE4,NO_INDEX, SAUT);
+    }
+
+    /**
+     * méthode affichage message saisie invalide
+     */
+    public void afficherSaisieInvalide() {
+        afficherEcran(MESSAGE_SAISIE_INVALIDE, NO_INDEX, SAUT);
+    }
+
+    /**
+     * méthode affichage message partie terminée et fin
+     */
+    public void afficherSortieProg() {
+        afficherEcran(MESSAGE_PARTIE_TERMINEE, NO_INDEX, SAUT);
+        afficherEcran(MESSAGE_FIN, NO_INDEX, SAUT);
+    }
+
+    /**
      * méthode d'affichage d'un saut de ligne vide
      */
     public void afficherSautLigne() {
@@ -311,6 +333,15 @@ public class View implements Serializable {
         return getString(MESSAGE_FAITES_VOTRE_CHOIX, NO_MESSAGE, NO_INDEX);
     }
 
+    /**
+     * Fonction de saisie du coup
+     * @param name
+     * @param index
+     * @return
+     */
+    public String getSaisieCoup(String name, int index) {
+        return getString(MESSAGE_JOUEUR + name, MESSAGE_SAISIE_COUP, index);
+    }
 
     /**
      * Fonction de saisie du choix de jeu

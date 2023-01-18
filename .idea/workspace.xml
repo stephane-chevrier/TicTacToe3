@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd1f321c-4ef4-4502-a74d-70128c25fa34" name="Changes" comment="11 janvier fin de journée">
+    <list default="true" id="bd1f321c-4ef4-4502-a74d-70128c25fa34" name="Changes" comment="17 janvier 20h33">
+      <change afterPath="$PROJECT_DIR$/src/ControleurHumanPLayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gomoku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HumanPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameControleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameControleur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameJoueurs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameJoueurs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameJoueurs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameLaunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viewer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +36,10 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -79,7 +91,7 @@
       <workItem from="1673425108784" duration="10000" />
       <workItem from="1673510731677" duration="749000" />
       <workItem from="1673556233343" duration="119000" />
-      <workItem from="1673556377965" duration="7046000" />
+      <workItem from="1673556377965" duration="17158000" />
     </task>
     <task id="LOCAL-00001" summary="2ème TicTacToe pour MVC">
       <created>1673510763799</created>
@@ -130,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673594484361</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="17 janvier 20h33">
+      <created>1673983989913</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673983989913</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,15 +160,21 @@
     <MESSAGE value="2ème TicTacToe pour MVC&#10;12 janvier 8h30" />
     <MESSAGE value="2ème TicTacToe pour MVC&#10;11 janvier fin de journée" />
     <MESSAGE value="11 janvier fin de journée" />
-    <option name="LAST_COMMIT_MESSAGE" value="11 janvier fin de journée" />
+    <MESSAGE value="17 janvier 20h33" />
+    <option name="LAST_COMMIT_MESSAGE" value="17 janvier 20h33" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GameControleur.java</url>
-          <line>130</line>
+          <line>137</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GameControleur.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

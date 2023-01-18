@@ -2,28 +2,28 @@ import java.io.Serializable;
 
 /**
  * Nom             Cell
- * Description     Modèle jeu TicTacToe (MVC)
+ * Description     Modele jeu TicTacToe (MVC)
  *                 Cellules du Damier
  * @version v1.0
  * Date            12 décembre 2022
- * @author Stéphane CHEVRIER
+ * @author Stephane CHEVRIER
  */
 public class Cell implements Serializable {
 
     /**
      * Initialisation des constantes de Cell
      */
-    private static final int JOUEUR_VIDE = Player.JOUEUR_VIDE;
-    private static final int CASE_VIDE_VALUE = Player.CASE_VALUE[JOUEUR_VIDE];
-    private static final String CASE_VIDE_REPRESENTATION = Player.REPRESENTATION_JOUEUR[JOUEUR_VIDE];
-    private static final String COULEUR_JOUEUR_VIDE = View.CASE_COULEUR[JOUEUR_VIDE];
-    private static final int SIZE_JOUEUR_VIDE = 0;
-
+    private static final int
+        JOUEUR_VIDE = Player.JOUEUR_VIDE,
+        CASE_VIDE_VALUE = Player.CASE_VALUE[JOUEUR_VIDE],
+        SIZE_JOUEUR_VIDE = 0;
+    private static final String
+        CASE_VIDE_REPRESENTATION = Player.REPRESENTATION_JOUEUR[JOUEUR_VIDE],
+        COULEUR_JOUEUR_VIDE = Viewer.CASE_COULEUR[JOUEUR_VIDE];
     /**
-     * création variable d'instance de Cell
+     * creation variable d'instance de Cell
      */
     protected Player joueur;
-
 
     /**
      * constructeur de Cell()
@@ -34,16 +34,16 @@ public class Cell implements Serializable {
     }
 
     /**
-     * Fonction de représentation de la cellule à partir des représentations de joueurs
+     * Fonction de representation de la cellule a partir des representations de joueurs
      * @param col
      * @return String : "| X " ou "| O " ou "|   "  avec la sequence couleur du joueur
      */
     public String getRepresentation(String col) {
-        return col + " " + joueur.couleur + joueur.representation + View.CASE_COULEUR[JOUEUR_VIDE] + " ";
+        return col + " " + joueur.couleur + joueur.representation + Viewer.CASE_COULEUR[JOUEUR_VIDE] + " ";
     }
 
     /**
-     * Fonction de représentation de la cellule à partir des représentations de joueurs
+     * Fonction de representation de la cellule a partir des representations de joueurs
      * @return String : X ou O ou ""
      */
     public String getRepresentationBrut() {
@@ -51,7 +51,7 @@ public class Cell implements Serializable {
     }
 
     /**
-     * Fonction de récupération de la valeur de la cellule en fonction du joueur de la cellule
+     * Fonction de recuperation de la valeur de la cellule en fonction du joueur de la cellule
      * @return int : -1 ou 1
      */
     public int getValue() {
