@@ -1,4 +1,8 @@
-public class ControleurHumanPLayer {
+package TicTacToe.Controleur;
+
+import TicTacToe.Viewer.*;
+
+public class ControleurEchange {
 
     /**
      * Déclaration des variables d'instance
@@ -8,7 +12,7 @@ public class ControleurHumanPLayer {
     /**
      * Constructeur
      */
-    public ControleurHumanPLayer() {
+    public ControleurEchange() {
         this.viewer = new Viewer();
     }
 
@@ -17,13 +21,6 @@ public class ControleurHumanPLayer {
      */
     public void setAfficherSaisieInvalide() {
         viewer.afficherSaisieInvalide();
-    }
-
-    /**
-     * Méthode d'envoi du message partie terminée et fin
-     */
-    public void setAfficherSortieProg() {
-        viewer.afficherSortieProg();
     }
 
     /**
@@ -36,4 +33,14 @@ public class ControleurHumanPLayer {
         return viewer.getSaisieCoup(name, index);
     }
 
+    /**
+     * Méthode de sortie du programme si saisie exit
+     * @param saisie
+     */
+    public void checkExitProg(String saisie) {
+        if (saisie.equalsIgnoreCase("exit")) {
+            viewer.afficherSortieProg();
+            System.exit(0);
+        }
+    }
 }

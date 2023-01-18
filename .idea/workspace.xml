@@ -4,18 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd1f321c-4ef4-4502-a74d-70128c25fa34" name="Changes" comment="17 janvier 20h33">
-      <change afterPath="$PROJECT_DIR$/src/ControleurHumanPLayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gomoku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HumanPlayer.java" afterDir="false" />
+    <list default="true" id="bd1f321c-4ef4-4502-a74d-70128c25fa34" name="Changes" comment="18 janvier 9h09">
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameSerialization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/Persistence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameControleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameControleur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameJoueurs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameLaunch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Model/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ControleurHumanPLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/ControleurEchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Damier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Model/Damier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameControleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameControleur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameLaunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gomoku.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/Gomoku.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Model/HumanPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Model/RandomPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/TicTacToe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Viewer/Viewer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +95,7 @@
       <workItem from="1673425108784" duration="10000" />
       <workItem from="1673510731677" duration="749000" />
       <workItem from="1673556233343" duration="119000" />
-      <workItem from="1673556377965" duration="17158000" />
+      <workItem from="1673556377965" duration="22331000" />
     </task>
     <task id="LOCAL-00001" summary="2ème TicTacToe pour MVC">
       <created>1673510763799</created>
@@ -149,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673983989913</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="18 janvier 9h09">
+      <created>1674029380594</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674029380594</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,20 +172,21 @@
     <MESSAGE value="2ème TicTacToe pour MVC&#10;11 janvier fin de journée" />
     <MESSAGE value="11 janvier fin de journée" />
     <MESSAGE value="17 janvier 20h33" />
-    <option name="LAST_COMMIT_MESSAGE" value="17 janvier 20h33" />
+    <MESSAGE value="18 janvier 9h09" />
+    <option name="LAST_COMMIT_MESSAGE" value="18 janvier 9h09" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GameControleur.java</url>
-          <line>137</line>
+          <url>file://$PROJECT_DIR$/src/TicTacToe/Controleur/GameControleur.java</url>
+          <line>142</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GameControleur.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/src/TicTacToe/Controleur/GameSerialization.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

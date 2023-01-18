@@ -1,22 +1,28 @@
+package TicTacToe.Controleur;
+
+import TicTacToe.Model.*;
+import TicTacToe.Viewer.*;
+import java.io.Serializable;
+
 /**
- * Nom             TicTacToe
- * Description     Contrôleur jeu TicTacToe (MVC)
+ * Nom             TicTacToe.Controleur.TicTacToe
+ * Description     Contrôleur jeu TicTacToe.Controleur.TicTacToe (MVC)
  * @version v1.0
  * Date            12 décembre 2022
  * @author Stéphane CHEVRIER
  */
 
-public class TicTacToe extends GameControleur /* implements Serializable */ {
+public class TicTacToe extends GameControleur implements Serializable {
 
     /**
      * constructeur
      */
     public TicTacToe() {
-        this.size = 2;      /* =n défini un plateau de n+1 * n+1 cellules pour le jeu TicTacToe */
+        this.size = 2;      /* =n défini un plateau de n+1 * n+1 cellules pour le jeu TicTacToe.Controleur.TicTacToe */
         this.nbreAlignements = (size + 1) * 3;   // on aura besoin de 3 blocs : lignes, colonnes, diagonales
         this.alignementGagnant = 3;
         this.viewer = new Viewer();
-        this.damier = new Damier(this.size);                 // this.size permet de spécifier size de l'objet TicTacToe
+        this.damier = new Damier(this.size);                 // this.size permet de spécifier size de l'objet TicTacToe.Controleur.TicTacToe
     }
 
     /**

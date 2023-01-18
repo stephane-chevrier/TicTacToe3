@@ -1,22 +1,28 @@
+package TicTacToe.Controleur;
+
+import TicTacToe.Viewer.*;
+import TicTacToe.Model.*;
+import java.io.Serializable;
+
 /**
- * Nom             Gomoku
- * Description     Contrôleur jeu TicTacToe (MVC)
+ * Nom             TicTacToe.Controleur.TicTacToe.Controleur.Gomoku
+ * Description     Contrôleur jeu TicTacToe.Controleur.TicTacToe (MVC)
  * @version v1.0
  * Date            4 janvier 2023
  * @author Stéphane CHEVRIER
  */
 
-public class Gomoku extends GameControleur /* implements Serializable */ {
+public class Gomoku extends GameControleur implements Serializable {
 
     /**
      * Constructeur
      */
     public Gomoku() {
-        this.size = 14;      // =n défini un plateau de n+1 * n+1 cellules pour le jeu TicTacToe
+        this.size = 14;      // =n défini un plateau de n+1 * n+1 cellules pour le jeu TicTacToe.Controleur.TicTacToe
         this.nbreAlignements = (size +1)*6;  // on aura besoin de 6 blocs : 1 de lignes, 1 de colonnes, 4 de diagonales
         this.alignementGagnant = 5;  // au minimum supérieur ou égal à 5
         this.viewer = new Viewer();
-        this.damier = new Damier(this.size);                 // this.size permet de spécifier size de l'objet Gomoku
+        this.damier = new Damier(this.size);                 // this.size permet de spécifier size de l'objet TicTacToe.Controleur.TicTacToe.Controleur.Gomoku
     }
 
     /**

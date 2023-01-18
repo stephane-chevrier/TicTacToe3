@@ -1,14 +1,20 @@
+package TicTacToe.Controleur;
+
+import TicTacToe.Model.*;
+import TicTacToe.Viewer.Viewer;
+import java.io.Serializable;
 import java.util.ArrayList;
+
 /**
- * Nom             GameControleur
- * Description     Contrôleur jeu TicTacToe (MVC)
+ * Nom             TicTacToe.Controleur.TicTacToe.Controleur.GameControleur
+ * Description     Contrôleur jeu TicTacToe.Controleur.TicTacToe (MVC)
  *                 Class abstraite des différents jeux
  * @version v1.0
  * Date            12 décembre 2022
  * @author Stéphane CHEVRIER
  */
 
-public abstract class GameControleur /* implements Serializable */ {
+public abstract class GameControleur implements Serializable {
 
     /**
      * initialisation de la taille du plateau
@@ -31,18 +37,17 @@ public abstract class GameControleur /* implements Serializable */ {
      * initialisation des objets
      */
     public Viewer viewer;
-    private Damier damier;
-//    public Persistence persistence;
+    protected Damier damier;
+    public Persistence persistence;
 
 
     /**
-     * Constructeur de la Class TicTacToe
+     * Constructeur de la Class TicTacToe.Controleur.TicTacToe
      */
     public GameControleur() {
             this.viewer = new Viewer();
             this.damier = new Damier(0);
-
-//        this.persistence = new GameSerialization();
+            this.persistence = new GameSerialization();
     }
 
     /**
@@ -109,7 +114,7 @@ public abstract class GameControleur /* implements Serializable */ {
         } else {
 
             // récupération de la dernière sauvegarde
-//            activePlayer = (Player) persistence.restaurer(GameSerialization.fichierSauvegardeActivePlayer);
+            activePlayer = (Player) persistence.restaurer(GameSerialization.FICHIER_SAUVEGARDE_ACTIVE_PLAYER);
         }
 
         //Afichage du plateau
@@ -128,8 +133,8 @@ public abstract class GameControleur /* implements Serializable */ {
             damier.setOwner(activePlayer,coup);
 
             // sauvegarde l'état du jeu
-//            persistence.sauvegarder(jeu,GameSerialization.fichierSauvegardeGameControleur);
-//            persistence.sauvegarder(activePlayer,GameSerialization.fichierSauvegardeActivePlayer);
+//            persistence.sauvegarder(jeu,GameSerialization.FICHIER_SAUVEGARDE_GAME_CONTROLEUR);
+//            persistence.sauvegarder(activePlayer,GameSerialization.FICHIER_SAUVEGARDE_ACTIVE_PLAYER);
 
             //Afichage du plateau
             viewer.display(damier.getPlateau());
@@ -137,7 +142,6 @@ public abstract class GameControleur /* implements Serializable */ {
             // Permute alternativement les joueurs
             activePlayer = (activePlayer.name.equals(joueur.get(1).name)) ? joueur.get(0) : joueur.get(1);
 
-            // répétition de la boucle tant que la partie n'est pas finie
         }
     }
 

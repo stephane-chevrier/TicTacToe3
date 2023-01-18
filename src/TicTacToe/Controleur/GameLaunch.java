@@ -1,7 +1,10 @@
+package TicTacToe.Controleur;
+
+import TicTacToe.Viewer.*;
 
 /**
- * Nom             GameLaunch
- * Description     Contrôleur jeu TicTacToe (MVC)
+ * Nom             TicTacToe.Controleur.TicTacToe.Controleur.GameLaunch
+ * Description     Contrôleur jeu TicTacToe.Controleur.TicTacToe (MVC)
  *                 Sélection et lancement du jeu choisi
  * @version v1.0
  * Date            12 décembre 2022
@@ -25,21 +28,21 @@ public class GameLaunch {
      * initialisation des variables locales
      */
     private static final boolean partieNouvelle = true;
-//    private static final boolean partieSauvegardee = false;
+    private static final boolean partieSauvegardee = false;
 
     /**
      * initialisation des objets
      */
     Viewer viewer;
-//    Persistence persistence;
+    Persistence persistence;
 
 
     /**
-     * Constructeur de la Class GameLaunch
+     * Constructeur de la Class TicTacToe.Controleur.TicTacToe.Controleur.GameLaunch
      */
     public GameLaunch() {
         this.viewer = new Viewer();
-//        this.persistence = new GameSerialization();
+        this.persistence = new GameSerialization();
     }
 
     /**
@@ -78,15 +81,15 @@ public class GameLaunch {
                     // partie sauvegardée
 //                    case SAUVEGARDE -> {
 //                        nouvellePartie = partieSauvegardee;
-//                        jeu = (GameControleur) persistence.restaurer(GameSerialization.fichierSauvegardeGameControleur);
+//                        jeu = (GameControleur) persistence.restaurer(GameSerialization.FICHIER_SAUVEGARDE_GAME_CONTROLEUR);
 //                    }
 
-                    // Jeu TicTacToe
+                    // Jeu TicTacToe.Controleur.TicTacToe
                     case TICTACTOE -> {
                         jeu = new TicTacToe();
                     }
 
-                    // Jeu Gomoku
+                    // Jeu TicTacToe.Controleur.TicTacToe.Controleur.Gomoku
                     case GOMOKU -> {
                         jeu = new Gomoku();
                     }
@@ -117,6 +120,5 @@ public class GameLaunch {
         // Fin boucle de sélection du jeu ou QUIT
         while (!(gameChoice.QUIT.toString().equalsIgnoreCase(saisie))) ;
     }
-
 }
 

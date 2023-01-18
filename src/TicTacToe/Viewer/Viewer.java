@@ -1,11 +1,15 @@
+package TicTacToe.Viewer;
+
+import TicTacToe.Model.Cell;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 /**
-     * Nom:            Viewer
-     * Description :   Viewer jeu TicTacToe (MVC)
+     * Nom:            TicTacToe.Viewer.Viewer
+     * Description :   TicTacToe.Viewer.Viewer jeu TicTacToe.Controleur.TicTacToe (MVC)
      * @version 1.0
      * Date :          23 décembre 2022
      * @author Stéphane CHEVRIER
@@ -308,7 +312,8 @@ public class Viewer implements Serializable {
 
     /**
      * Fonction de saisie d'une string avec un message de saisie
-     * @param message
+     * @param message1
+     * @param message2
      * @param index
      * @return String : saisie du clavier
      */

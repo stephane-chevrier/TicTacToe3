@@ -1,9 +1,11 @@
+package TicTacToe.Model;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * Nom             Player, Class abstract
- * Description     Modèle jeu TicTacToe (MVC)
+ * Nom             Model.Player, Class abstract
+ * Description     Modèle jeu TicTacToe.Controleur.TicTacToe (MVC)
  *                 Joueurs
  * @version v1.0
  * Date            12 décembre 2022
@@ -12,7 +14,7 @@ import java.util.ArrayList;
 public abstract class Player implements Serializable {
 
     /**
-     * initialisation des constantes de Player
+     * initialisation des constantes de Model.Player
      */
     public static final String nomJoueurAleatoire = "random";
     public static final int JOUEUR_VIDE = 0;
@@ -38,10 +40,9 @@ public abstract class Player implements Serializable {
     public String representation;
     public String couleur;
     public int size;
-    public GameControleur gameControleur;
 
     /**
-     * constructeur de la Class Player
+     * constructeur de la Class Model.Player
      * @param name
      * @param value
      * @param representation

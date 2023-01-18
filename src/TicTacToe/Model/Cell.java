@@ -1,9 +1,12 @@
+package TicTacToe.Model;
+
+import TicTacToe.Viewer.*;
 import java.io.Serializable;
 
 /**
- * Nom             Cell
- * Description     Modele jeu TicTacToe (MVC)
- *                 Cellules du Damier
+ * Nom             Model.Cell
+ * Description     Modele jeu TicTacToe.Controleur.TicTacToe (MVC)
+ *                 Cellules du Model.Damier
  * @version v1.0
  * Date            12 décembre 2022
  * @author Stephane CHEVRIER
@@ -11,7 +14,7 @@ import java.io.Serializable;
 public class Cell implements Serializable {
 
     /**
-     * Initialisation des constantes de Cell
+     * Initialisation des constantes de Model.Cell
      */
     private static final int
         JOUEUR_VIDE = Player.JOUEUR_VIDE,
@@ -21,12 +24,12 @@ public class Cell implements Serializable {
         CASE_VIDE_REPRESENTATION = Player.REPRESENTATION_JOUEUR[JOUEUR_VIDE],
         COULEUR_JOUEUR_VIDE = Viewer.CASE_COULEUR[JOUEUR_VIDE];
     /**
-     * creation variable d'instance de Cell
+     * creation variable d'instance de Model.Cell
      */
     protected Player joueur;
 
     /**
-     * constructeur de Cell()
+     * constructeur de Model.Cell()
      */
     protected Cell() {
         // par défaut les cellules contiennent un joueur vide (joueur n°0)

@@ -1,9 +1,11 @@
+package TicTacToe.Model;
+
 import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * Nom             RandomPlayer, extends Player
- * Description     Modèle jeu TicTacToe (MVC)
+ * Nom             Model.RandomPlayer, extends Model.Player
+ * Description     Modèle jeu TicTacToe.Controleur.TicTacToe (MVC)
  *                 Joueurs aléatoires
  * @version v1.0
  * Date            19 décembre 2022
@@ -12,7 +14,7 @@ import java.util.Random;
 public class RandomPlayer extends Player {
 
     /**
-     * constructeur de la Class RandomPlayer
+     * constructeur de la Class Model.RandomPlayer
      * @param name
      * @param value
      * @param representation

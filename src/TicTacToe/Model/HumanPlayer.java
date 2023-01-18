@@ -1,8 +1,11 @@
+package TicTacToe.Model;
+
+import TicTacToe.Controleur.ControleurEchange;
 import java.util.ArrayList;
 
 /**
- * Nom             HumanPlayer, extends Player
- * Description     Modèle jeu TicTacToe (MVC)
+ * Nom             Model.HumanPlayer, extends Model.Player
+ * Description     Modèle jeu TicTacToe.Controleur.TicTacToe (MVC)
  *                 Joueurs Humain
  * @version v1.0
  * Date            19 décembre 2022
@@ -11,10 +14,10 @@ import java.util.ArrayList;
 
 public class HumanPlayer extends Player {
 
-    private ControleurHumanPLayer controleurHumanPLayer = new ControleurHumanPLayer();
+    private ControleurEchange controleurEchange = new ControleurEchange();
 
     /**
-     * constructeur de la Class HumanPlayer
+     * constructeur de la Class Model.HumanPlayer
      * @param name
      * @param value
      * @param representation
@@ -60,7 +63,7 @@ public class HumanPlayer extends Player {
             return true;
         } else {
             // message format saisie incorrect
-            controleurHumanPLayer.setAfficherSaisieInvalide();
+            controleurEchange.setAfficherSaisieInvalide();
             return false;
         }
     }
@@ -77,17 +80,6 @@ public class HumanPlayer extends Player {
         }
         return saisie;
     }
-
-    /**
-     * Méthode de sortie du programme si saisie exit
-     * @param saisie
-     */
-    public void checkExitProg(String saisie) {
-        if (saisie.equalsIgnoreCase("exit")) {
-            controleurHumanPLayer.setAfficherSortieProg();
-            System.exit(0);
-        }
-    }                // MIEUX DANS LE CONTROLEUR ?
 
     /**
      * Fonction de saisie de coordonnées + vérification + renvoie les coordonnées
@@ -107,10 +99,10 @@ public class HumanPlayer extends Player {
         do {
 
             // saisie du coup avec message
-            String saisie = controleurHumanPLayer.getGetSaisieCoup(this.name,index);
+            String saisie = controleurEchange.getGetSaisieCoup(this.name,index);
 
             // sortie du programme si saisie exit
-            checkExitProg(saisie);
+            controleurEchange.checkExitProg(saisie);
 
             // vérifie que la saisie contient X.Y
             if (verifFormatSaisie(saisie)) {
