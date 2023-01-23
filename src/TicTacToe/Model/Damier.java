@@ -69,4 +69,5 @@ public class Damier implements Serializable {
     public boolean verifCaseLibre(ArrayList<Integer> coup) {
         return (plateau[coup.get(0)][coup.get(1)].getValue() == Player.CASE_VALUE[0]);
     }
+
 }

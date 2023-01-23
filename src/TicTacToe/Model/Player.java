@@ -66,5 +66,6 @@ public abstract class Player implements Serializable {
      * @return ArrayList<Integer> : {Y,X}
      */
     public abstract ArrayList<Integer> getMoveFromPlayer (int size, int index);
+
 }
 

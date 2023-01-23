@@ -60,4 +60,5 @@ public class Cell implements Serializable {
     public int getValue() {
         return joueur.value;
     }
+
 }

@@ -114,7 +114,7 @@ public abstract class GameControleur implements Serializable {
         } else {
 
             // récupération de la dernière sauvegarde
-            activePlayer = (Player) persistence.restaurer(GameSerialization.FICHIER_SAUVEGARDE_ACTIVE_PLAYER);
+//            activePlayer = (Player) persistence.restaurer(GameSerialization.FICHIER_SAUVEGARDE_ACTIVE_PLAYER);
         }
 
         //Afichage du plateau
@@ -133,7 +133,6 @@ public abstract class GameControleur implements Serializable {
             damier.setOwner(activePlayer,coup);
 
             // sauvegarde l'état du jeu
-//            persistence.sauvegarder(jeu,GameSerialization.FICHIER_SAUVEGARDE_GAME_CONTROLEUR);
 //            persistence.sauvegarder(activePlayer,GameSerialization.FICHIER_SAUVEGARDE_ACTIVE_PLAYER);
 
             //Afichage du plateau

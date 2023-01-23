@@ -17,7 +17,7 @@ public class GameLaunch {
      * définition des jeux possibles
      */
     private enum gameChoice {
-        SAUVEGARDE,
+//        DERNIERE_PARTIE,
         TICTACTOE,
         GOMOKU,
         PUISSANCE4,
@@ -79,7 +79,7 @@ public class GameLaunch {
                 switch (gameChoice.valueOf(saisie.toUpperCase())) {
 
                     // partie sauvegardée
-//                    case SAUVEGARDE -> {
+//                    case DERNIERE_PARTIE -> {
 //                        nouvellePartie = partieSauvegardee;
 //                        jeu = (GameControleur) persistence.restaurer(GameSerialization.FICHIER_SAUVEGARDE_GAME_CONTROLEUR);
 //                    }

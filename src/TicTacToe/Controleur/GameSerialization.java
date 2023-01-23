@@ -16,10 +16,10 @@ public class GameSerialization implements Persistence, Serializable {
     /**
      * initialisation des constantes locales
      */
-    public static final String FICHIER_SAUVEGARDE_GAME_CONTROLEUR = "C:\\Users\\stephane.chevrier\\Downloads\\TicTacToeJeu.ser";
-    public static final String FICHIER_SAUVEGARDE_ACTIVE_PLAYER = "C:\\Users\\stephane.chevrier\\Downloads\\TicTacToeActivePlayer.ser";
-//    public static final String FICHIER_SAUVEGARDE_GAME_CONTROLEUR = "~/Downloads/TicTacToeJeu.ser";
-//    public static final String FICHIER_SAUVEGARDE_ACTIVE_PLAYER = "~/Downloads/TicTacToeActivePlayer.ser";
+//    public static final String FICHIER_SAUVEGARDE_GAME_CONTROLEUR = "TicTacToeJeu.ser";   //C:\\Users\\stephane.chevrier\\Downloads\\
+//    public static final String FICHIER_SAUVEGARDE_ACTIVE_PLAYER = "TicTacToeActivePlayer.ser";  //C:\\Users\\stephane.chevrier\\Downloads\\
+    public static final String FICHIER_SAUVEGARDE_GAME_CONTROLEUR = "TicTacToeJeu.ser";
+    public static final String FICHIER_SAUVEGARDE_ACTIVE_PLAYER = "TicTacToeActivePlayer.ser";
 
     /**
      * constructeur
