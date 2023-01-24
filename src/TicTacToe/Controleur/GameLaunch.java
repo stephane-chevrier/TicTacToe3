@@ -33,8 +33,8 @@ public class GameLaunch {
     /**
      * initialisation des objets
      */
-    Viewer viewer;
-    Persistence persistence;
+    public Viewer viewer;
+    protected Persistence persistence;
 
 
     /**

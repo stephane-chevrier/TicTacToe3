@@ -31,7 +31,7 @@ public abstract class GameControleur implements Serializable {
     /**
      * initialisation des joueurs
      */
-    public final ArrayList<Player> joueur = new ArrayList<>(nombreJoueurs);
+    public ArrayList<Player> joueur = new ArrayList<>(nombreJoueurs);
 
     /**
      * initialisation des objets

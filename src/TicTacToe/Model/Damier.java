@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * Description     Modele jeu TicTacToe.Controleur.TicTacToe (MVC)
  *                 Plateau du jeu
  * @version v1.0
- * Date            12 décembre 2022
+ * Date            13 décembre 2022
  * @author Stéphane CHEVRIER
  */
 
