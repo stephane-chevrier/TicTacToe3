@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd1f321c-4ef4-4502-a74d-70128c25fa34" name="Changes" comment="TicTacToe2 terminé, MVC ok, 23/1 20h23&#10;Sauvegarde non opérationnelle avec joueur humain">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameControleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameControleur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameLaunch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToe/Model/Damier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Model/Damier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,19 +64,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="TicTacToe2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="TicTacToe2" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -102,6 +86,7 @@
       <workItem from="1674584913386" duration="1166000" />
       <workItem from="1674586101284" duration="63000" />
       <workItem from="1674586208809" duration="752000" />
+      <workItem from="1674762598602" duration="2763000" />
     </task>
     <task id="LOCAL-00001" summary="2ème TicTacToe pour MVC">
       <created>1673510763799</created>

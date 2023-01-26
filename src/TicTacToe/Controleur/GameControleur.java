@@ -37,8 +37,8 @@ public abstract class GameControleur implements Serializable {
      * initialisation des objets
      */
     public Viewer viewer;
-    protected Damier damier;
-    public Persistence persistence;
+    public Damier damier;
+    private Persistence persistence;
 
 
     /**
