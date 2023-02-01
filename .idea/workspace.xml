@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd1f321c-4ef4-4502-a74d-70128c25fa34" name="Changes" comment="TicTacToe2 terminé, MVC ok, 23/1 20h23&#10;Sauvegarde non opérationnelle avec joueur humain">
-      <change beforePath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameControleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameControleur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameLaunch.java" afterDir="false" />
+    <list default="true" id="bd1f321c-4ef4-4502-a74d-70128c25fa34" name="Changes" comment="TicTacToe2 terminé, MVC ok, 26/1 22h">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,8 @@
       <workItem from="1674584913386" duration="1166000" />
       <workItem from="1674586101284" duration="63000" />
       <workItem from="1674586208809" duration="752000" />
-      <workItem from="1674762598602" duration="2763000" />
+      <workItem from="1674762598602" duration="3446000" />
+      <workItem from="1675276991075" duration="2535000" />
     </task>
     <task id="LOCAL-00001" summary="2ème TicTacToe pour MVC">
       <created>1673510763799</created>
@@ -165,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674505067458</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="TicTacToe2 terminé, MVC ok, 26/1 22h">
+      <created>1674767220879</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674767220879</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +198,7 @@
     <MESSAGE value="18 janvier 9h09" />
     <MESSAGE value="TicTacToe2 terminé, MVC ok, 18/1 20h23" />
     <MESSAGE value="TicTacToe2 terminé, MVC ok, 23/1 20h23&#10;Sauvegarde non opérationnelle avec joueur humain" />
-    <option name="LAST_COMMIT_MESSAGE" value="TicTacToe2 terminé, MVC ok, 23/1 20h23&#10;Sauvegarde non opérationnelle avec joueur humain" />
+    <MESSAGE value="TicTacToe2 terminé, MVC ok, 26/1 22h" />
+    <option name="LAST_COMMIT_MESSAGE" value="TicTacToe2 terminé, MVC ok, 26/1 22h" />
   </component>
 </project>
