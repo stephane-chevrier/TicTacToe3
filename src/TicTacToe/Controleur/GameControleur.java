@@ -19,32 +19,32 @@ public abstract class GameControleur implements Serializable {
     /**
      * initialisation de la taille du plateau
      */
-    public int size;
-    public int nbreAlignements;
-    public int alignementGagnant;
+    protected int size;
+    protected int nbreAlignements;
+    protected int alignementGagnant;
 
     /**
      * initialisation du nombre de joueurs
      */
-    public int nombreJoueurs = 2;
+    protected int nombreJoueurs = 2;
 
     /**
      * initialisation des joueurs
      */
-    public ArrayList<Player> joueur = new ArrayList<>(nombreJoueurs);
+    protected ArrayList<Player> joueur = new ArrayList<>(nombreJoueurs);
 
     /**
      * initialisation des objets
      */
-    public Viewer viewer;
-    public Damier damier;
-    private Persistence persistence;
+    protected  Viewer viewer;
+    protected Damier damier;
+    protected Persistence persistence;
 
 
     /**
      * Constructeur de la Class TicTacToe.Controleur.TicTacToe
      */
-    public GameControleur() {
+    protected GameControleur() {
             this.viewer = new Viewer();
             this.damier = new Damier(0);
             this.persistence = new GameSerialization();
@@ -55,7 +55,7 @@ public abstract class GameControleur implements Serializable {
      *                                             soit il n'y a plus de coups à jouer
      * @return boolean : true si la partie est finie, false sinon
      */
-    public boolean isOver(GameControleur jeu) {
+    private boolean isOver(GameControleur jeu) {
 
         // initialisation des séries gagnantes
         String[] alignementComplet = new String[2];
@@ -92,7 +92,7 @@ public abstract class GameControleur implements Serializable {
     /**
      * Méthode de jeu de la partie
      */
-    public void play (GameControleur jeu, boolean nouvellePartie) {
+    protected void play (GameControleur jeu, boolean nouvellePartie) {
 
         //initialisation des variables locales
         ArrayList<Integer> coup;
@@ -149,7 +149,7 @@ public abstract class GameControleur implements Serializable {
      *                         du nombre de coups joués
      * @return ArrayList<Integer>(3) : Somme de chaque alignement, nombre de coups joués
      */
-    public abstract String[] calculerAlignements();
+    protected abstract String[] calculerAlignements();
 
     /**
      * Fonction de renvoie des 2 joueurs définis

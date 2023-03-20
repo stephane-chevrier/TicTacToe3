@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bd1f321c-4ef4-4502-a74d-70128c25fa34" name="Changes" comment="TicTacToe2 terminé, MVC ok, 26/1 22h">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/Controleur/ControleurEchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/ControleurEchange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameControleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameControleur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicTacToe/Controleur/GameLaunch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +29,6 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java" root0="SKIP_INSPECTION" />
-    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -58,7 +57,20 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="TicTacToe2" />
+      <module name="TicTacToe3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TicTacToe3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TicTacToe3" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

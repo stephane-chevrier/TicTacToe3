@@ -27,14 +27,14 @@ public class GameLaunch {
     /**
      * initialisation des variables locales
      */
-    private static final boolean partieNouvelle = true;
-    private static final boolean partieSauvegardee = false;
+    private static final boolean PARTIE_NOUVELLE = true;
+    private static final boolean PARTIE_SAUVEGARDEE = false;
 
     /**
      * initialisation des objets
      */
-    private Viewer viewer;
-    private Persistence persistence;
+    private final Viewer viewer;
+    private final Persistence persistence;
 
 
     /**
@@ -53,7 +53,7 @@ public class GameLaunch {
         // initialisation des variables locales
         String saisie;
         GameControleur jeu = null;
-        boolean nouvellePartie = partieNouvelle;
+        boolean nouvellePartie = PARTIE_NOUVELLE;
 
         // Initialisation de l'affichage
         viewer.displayEffacer();
@@ -114,7 +114,7 @@ public class GameLaunch {
             if (jeu != null) {
                 jeu.play(jeu,nouvellePartie);
                 jeu = null;
-                nouvellePartie = partieNouvelle;
+                nouvellePartie = PARTIE_NOUVELLE;
             }
         }
         // Fin boucle de sélection du jeu ou QUIT

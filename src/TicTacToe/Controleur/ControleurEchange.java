@@ -7,7 +7,7 @@ public class ControleurEchange {
     /**
      * Déclaration des variables d'instance
      */
-    private Viewer viewer;
+    private final Viewer viewer;
 
     /**
      * Constructeur
